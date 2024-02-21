@@ -1,0 +1,34 @@
+{
+    "name":"jonalainez",
+    "web":{
+        "directoryBrowsing":false,
+        "rewrites":{
+            "enable":"true"
+        }
+    },
+    "JVM":{
+        "heapSize":"768",
+        "args":"-Dfile.encoding=UTF8 -Dcom.sun.net.ssl.enableECC=false"
+    },
+    "openBrowserURL":"/",
+    "trayicon":"modules_app/contentbox-custom/_content/ContentBoxIcon300.png",
+    "trayOptions":[
+        {
+            "label":"Open ContentBox Admin",
+            "action":"openbrowser",
+            "url":"/cbadmin",
+            "disabled":false,
+            "image":"modules_app/contentbox-custom/_content/ContentBoxIcon300.png"
+        }
+    ],
+    "cfconfig":{
+        "file":".cfconfig.json"
+    },
+    "env":{
+        "lucee-extensions":"D062D72F-F8A2-46F0-8CBC91325B2F067B"
+    },
+    "openBrowser":"false",
+    "app":{
+        "cfengine":"lucee@5.4"
+    }
+}

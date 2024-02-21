@@ -1,0 +1,48 @@
+{
+    "name":"ContentBox Modular CMS Installer",
+    "version":"6.1.0-snapshot",
+    "location":"https://downloads.ortussolutions.com/ortussolutions/contentbox/6.1.0/contentbox-installer-6.1.0.zip",
+    "author":"Ortus Solutions <info@ortussolutions.com>",
+    "slug":"contentbox-installer",
+    "shortDescription":"A ColdBox site configured and deployed with ContentBox CMS",
+    "type":"cms",
+    "keywords":"cms,content management,modular cms",
+    "homepage":"https://www.contentboxcms.org",
+    "documentation":"https://contentbox.ortusbooks.com",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/Ortus-Solutions/ContentBox"
+    },
+    "bugs":"https://ortussolutions.atlassian.net/browse/CONTENTBOX",
+    "createPackageDirectory":false,
+    "license":[
+        {
+            "type":"Apache2",
+            "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    ],
+    "contributors":[
+        "Joel Watson <existdissolve@gmail.com>",
+        "Brad Wood <bdw429s@gmail.com>",
+        "Curt Gratz <gratz@computerknowhow.com>"
+    ],
+    "dependencies":{
+        "coldbox":"^7.0.0+7",
+        "contentbox":"~6.1.0-snapshot",
+        "commandbox-dotenv":"*",
+        "commandbox-cfconfig":"*",
+        "commandbox-migrations":"*"
+    },
+    "devDependencies":{},
+    "installPaths":{},
+    "ignores":[],
+    "scripts":{
+        "contentbox:install":"install --force && cd modules/contentbox && install --force",
+        "contentbox:migrate":"migrate up manager=contentbox",
+        "contentbox:migrate:up":"run-script contentbox:migrate",
+        "contentbox:migrate:down":"migrate down manager=contentbox",
+        "format":"cfformat run config/,handlers/,models/,modules_app/**/*.cfc,Application.cfc --overwrite",
+        "format:watch":"cfformat watch config/,handlers/,models/,modules_app/**/*.cfc,Application.cfc ./.cfformat.json",
+        "format:check":"cfformat check config/**/*.cfc,modules_app/**/*.cfc,modules/contentbox/**/*.cfc,tests/**/*.cfc,Application.cfc"
+    }
+}

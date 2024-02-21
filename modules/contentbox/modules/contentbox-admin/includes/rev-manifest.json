@@ -1,0 +1,15 @@
+{
+  "modules/contentbox/modules/contentbox-admin/includes/js/bootstrap.js": "/modules/contentbox/modules/contentbox-admin/includes/js/bootstrap.b4e726e253aaa3912295.js",
+  "modules/contentbox/modules/contentbox-admin/includes/js/admin.js": "/modules/contentbox/modules/contentbox-admin/includes/js/admin.7caabb138ae578146a7a.js",
+  "modules/contentbox/modules/contentbox-admin/includes/js/app.js": "/modules/contentbox/modules/contentbox-admin/includes/js/app.48039f9be76d1e13ccd7.js",
+  "modules/contentbox/modules/contentbox-admin/includes/css/contentbox.js": "/modules/contentbox/modules/contentbox-admin/includes/css/contentbox.68706c98771f664b6384.js",
+  "modules/contentbox/modules/contentbox-admin/includes/css/contentbox.css": "/modules/contentbox/modules/contentbox-admin/includes/css/contentbox.b36d3060700d9788b8a3.css",
+  "includes/js/runtime.js": "/includes/js/runtime.09e79be81623f023bc88.js",
+  "includes/js/vendor.js": "/includes/js/vendor.20ad111117e4544c755a.js",
+  "bootstrap.js.map": "/modules/contentbox/modules/contentbox-admin/includes/js/bootstrap.b4e726e253aaa3912295.js.map",
+  "admin.js.map": "/modules/contentbox/modules/contentbox-admin/includes/js/admin.7caabb138ae578146a7a.js.map",
+  "app.js.map": "/modules/contentbox/modules/contentbox-admin/includes/js/app.48039f9be76d1e13ccd7.js.map",
+  "contentbox.css.map": "/modules/contentbox/modules/contentbox-admin/includes/css/contentbox.b36d3060700d9788b8a3.css.map",
+  "runtime.js.map": "/includes/js/runtime.09e79be81623f023bc88.js.map",
+  "vendor.js.map": "/includes/js/vendor.20ad111117e4544c755a.js.map"
+}

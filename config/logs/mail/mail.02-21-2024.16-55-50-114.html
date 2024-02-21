@@ -1,0 +1,894 @@
+Sent at: Wednesday, February 21, 2024, 4:55:50 PM Coordinated Universal Time<br/>
+				<hr/>
+				Mail Attributes
+				<hr/>
+			
+<!-- ==start== dump {ts '2024-02-21 16:55:50'} format: html -->
+<div id="xe3" class="-lucee-dump"><style>
+.-lucee-dump .disp-none { display: none; }
+</style>
+<script>
+window.__Lucee = { initialized : false,
+				addEventListeners : function(selector, event, handler, useCapture){
+					useCapture = useCapture || false;
+					Array.prototype.forEach.call(
+						 document.querySelectorAll(selector)
+						,function(el, ix) {
+						  el.addEventListener(event, handler, useCapture);
+						}
+					);
+				}
+				,getNextSiblings   : function(el){
+					var  orig = el
+						,result = [];
+					while (el && el.nodeType === Node.ELEMENT_NODE) {
+						if (el !== orig)
+							result.push(el);
+						el = el.nextElementSibling || el.nextSibling;
+					}
+					return result;
+				}
+				,onDocumentReady		   : function(){
+					var L = window.__Lucee;
+					if (L.initialized)
+						return;
+					L.addEventListeners(".collapse-trigger", "click", function(evt){
+						var tr = evt.target.closest("tr");
+						var siblings = L.getNextSiblings(tr);
+						siblings.forEach(function(el, ix){
+							el.classList.toggle("disp-none");
+						});
+					});
+					L.initialized = true;
+				}
+			}
+			
+document.addEventListener("DOMContentLoaded", __Lucee.onDocumentReady);
+</script>
+<style type="text/css">
+div#xe3 table {font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:11px; empty-cells:show; color:#000; border-collapse:collapse;}
+div#xe3 td {border:1px solid #000; vertical-align:top; padding:2px; empty-cells:show;}
+div#xe3 td span {font-weight:bold;}
+div#xe3 td.luceeN0 {color:#333399;border-color:#333399;background-color:#ccf;}
+div#xe3 td.luceeH0 {color:#333399;border-color:#333399;background-color:#99f;}
+div#xe3 td.luceeN1 {color:#990000;border-color:#990000;background-color:#fc9;}
+div#xe3 td.luceeH1 {color:#990000;border-color:#990000;background-color:#f60;}
+div#xe3 td.luceeN2 {color:#336600;border-color:#336600;background-color:#cf3;}
+div#xe3 td.luceeH2 {color:#336600;border-color:#336600;background-color:#9c3;}
+</style>
+<table title="/Users/jona/Documents/Dev/jonalainez/modules/contentbox/modules/contentbox-deps/modules/cbmailservices/models/protocols/FileProtocol.cfc:101"><tr><td class="collapse-trigger luceeH0" colspan="3" style="cursor:pointer;"><span>Struct</span><br>Entries: 18</td></tr><tr><td class="luceeH0">additionalInfo</td><td class="luceeN0"><table><tr><td class="collapse-trigger luceeH0" colspan="0" style="cursor:pointer;"><span>Struct</span></td></tr></table></td></tr><tr><td class="luceeH0">bcc</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1"></td></tr></table></td></tr><tr><td class="luceeH0">body</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+	&lt;base href=&quot;http://127.0.0.1:52761/modules/contentbox/email_templates/images/&quot; /&gt;
+
+	&lt;title&gt;ContentBox Email&lt;/title&gt;
+    &lt;!--[if gte mso 6]&gt;
+      &lt;style&gt;
+          table.kmButtonBarContent {width:100% !important;}
+      &lt;/style&gt;
+    &lt;![endif]--&gt;
+
+	&lt;style type=&quot;text/css&quot;&gt;
+        @media only screen and (max-width: 480px) {
+            body, table, td, p, a, li, blockquote {
+                -webkit-text-size-adjust: none !important;
+            }
+            body{
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+            td[id=bodyCell] {
+                padding: 10px !important;
+            }
+            table[class=kmTextContentContainer] {
+                width: 100% !important;
+            }
+            table[class=kmBoxedTextContentContainer] {
+                width: 100% !important;
+            }
+            td[class=kmImageContent] {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            img[class=kmImage] {
+                width:100% !important;
+            }
+            table[class=kmSplitContentLeftContentContainer],
+            table[class=kmSplitContentRightContentContainer],
+            table[class=kmColumnContainer] {
+                width:100% !important;
+            }
+            table[class=kmSplitContentLeftContentContainer] td[class=kmTextContent],
+            table[class=kmSplitContentRightContentContainer] td[class=kmTextContent],
+            table[class=&quot;kmColumnContainer&quot;] td[class=kmTextContent] {
+                padding-top:9px !important;
+            }
+            td[class=&quot;rowContainer kmfloat-left&quot;],
+            td[class=&quot;rowContainer kmfloat-left firstColumn&quot;],
+            td[class=&quot;rowContainer kmfloat-left lastColumn&quot;] {
+                float:left;
+                clear: both;
+                width: 100% !important;
+            }
+            table[id=templateContainer],
+            table[class=templateRow],
+            table[id=templateHeader],
+            table[id=templateBody],
+            table[id=templateFooter] {
+                max-width:600px !important;
+                width:100% !important;
+            }
+
+            h1 {
+                font-size:24px !important;
+                line-height:100% !important;
+            }
+
+
+            h2 {
+                font-size:20px !important;
+                line-height:100% !important;
+            }
+
+
+            h3 {
+                font-size:18px !important;
+                line-height:100% !important;
+            }
+
+
+            h4 {
+                font-size:16px !important;
+                line-height:100% !important;
+            }
+
+            td[class=rowContainer] td[class=kmTextContent] {
+                font-size:18px !important;
+                line-height:100% !important;
+                padding-right:18px !important;
+                padding-left:18px !important;
+            }
+
+
+            td[class=headerContainer] td[class=kmTextContent] {
+                font-size:18px !important;
+                line-height:100% !important;
+                padding-right:18px !important;
+                padding-left:18px !important;
+            }
+
+
+            td[class=bodyContainer] td[class=kmTextContent] {
+                font-size:18px !important;
+                line-height:100% !important;
+                padding-right:18px !important;
+                padding-left:18px !important;
+            }
+
+
+            td[class=footerContent] {
+                font-size:18px !important;
+                line-height:100% !important;
+            }
+
+            td[class=footerContent] a {
+                display:block !important;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body style=&quot;margin: 0; padding: 0; background-color: #EAEAEA&quot;&gt;
+&lt;center&gt;
+    &lt;table align=&quot;center&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; id=&quot;bodyTable&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; background-color: #EAEAEA; height: 100%; margin: 0; width: 100%&quot;&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td align=&quot;center&quot; id=&quot;bodyCell&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; padding-top: 20px; padding-left: 20px; padding-bottom: 20px; padding-right: 20px; border-top: 0; height: 100%; margin: 0; width: 100%&quot;&gt;
+                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; id=&quot;templateContainer&quot; width=&quot;600&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; border: 1px solid #CCC; background-color: #F4F4F4; border-radius: 0&quot;&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;templateRow&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                        &lt;tbody&gt;
+                                            &lt;tr&gt;
+                                                &lt;td class=&quot;rowContainer kmfloat-left&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                                &lt;/td&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/tbody&gt;
+                                    &lt;/table&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;templateRow&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                        &lt;tbody&gt;
+                                            &lt;tr&gt;
+                                                &lt;td
+                                                	class=&quot;rowContainer kmfloat-left&quot;
+                                                	valign=&quot;top&quot;
+                                                	style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0;padding-top:10px;&quot;&gt;
+
+                                                    
+													&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;kmTextBlock&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                    &lt;tbody class=&quot;kmTextBlockOuter&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;kmTextBlockInner&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; &quot;&gt;
+                                &lt;table align=&quot;left&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;kmTextContentContainer&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                    &lt;tbody&gt;
+                                        &lt;tr&gt;
+                                            &lt;td class=&quot;kmTextContent&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; color: #505050; font-family: Helvetica; font-size: 14px; line-height: 150%; text-align: left; padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;&quot;&gt;
+            
+                &lt;table cellpadding=3 cellspacing=3&gt;
+                    &lt;tr&gt;
+                        &lt;td width=30&gt;&lt;img
+						class=&quot;gravatar&quot;
+						align=&quot;middle&quot;
+						width=&quot;40&quot;
+						height=&quot;40&quot;
+						src=&quot;//www.gravatar.com/avatar.php?gravatar_id=3bbfb35b8e76b0dd885490facc423e80&amp;s=40&amp;r=PG&quot;
+					/&gt;&lt;/td&gt;
+                        &lt;td&gt;
+        &lt;strong&gt;Jonathan Lainez&lt;/strong&gt; created a new blog entry:&lt;br /&gt;&lt;a href='http://127.0.0.1:52761/blog/7th'&gt;7th&lt;/a&gt;
+    &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; class=&quot;kmDividerBlock&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                    &lt;tbody class=&quot;kmDividerBlockOuter&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;kmDividerBlockInner&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; padding-top:18px;padding-bottom:18px;padding-left:18px;padding-right:18px;&quot;&gt;
+                                &lt;table class=&quot;kmDividerContent&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; border-top-width:1px;border-top-style:solid;border-top-color:#DDDDDD;&quot;&gt;
+                                    &lt;tbody&gt;
+                                        &lt;tr&gt;
+                                            &lt;td style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                                &lt;span&gt;&lt;/span&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;kmTextBlock&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                    &lt;tbody class=&quot;kmTextBlockOuter&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;kmTextBlockInner&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; &quot;&gt;
+                                &lt;table align=&quot;left&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;kmTextContentContainer&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                    &lt;tbody&gt;
+                                        &lt;tr&gt;
+                                            &lt;td class=&quot;kmTextContent&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; color: #505050; font-family: Helvetica; font-size: 14px; line-height: 150%; text-align: left; padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;&quot;&gt;
+            &lt;h2 style=&quot;color: #777; display: block; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: bold; line-height: 110%; letter-spacing: normal; margin: 0; margin-bottom: 9px; text-align: left&quot;&gt;
+                    Entry Details
+                &lt;/h2&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;kmTextBlock&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                    &lt;tbody class=&quot;kmTextBlockOuter&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;kmTextBlockInner&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; &quot;&gt;
+                                &lt;table align=&quot;left&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;kmTextContentContainer&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                    &lt;tbody&gt;
+                                        &lt;tr&gt;
+                                            &lt;td class=&quot;kmTextContent&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; color: #505050; font-family: Helvetica; font-size: 14px; line-height: 150%; text-align: left; padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;&quot;&gt;
+            
+        &lt;table cellpadding='3' cellspacing='3'&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;strong&gt;Title:&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;7th&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;strong&gt;URL:&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;a href='http://127.0.0.1:52761/blog/7th'&gt;http://127.0.0.1:52761/blog/7th&lt;/a&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;strong&gt;Published:&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;true on Feb 21, 2024 16:55:00 UTC&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;strong&gt;Expires:&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; class=&quot;kmDividerBlock&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                    &lt;tbody class=&quot;kmDividerBlockOuter&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;kmDividerBlockInner&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; padding-top:18px;padding-bottom:18px;padding-left:18px;padding-right:18px;&quot;&gt;
+                                &lt;table class=&quot;kmDividerContent&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; border-top-width:1px;border-top-style:solid;border-top-color:#DDDDDD;&quot;&gt;
+                                    &lt;tbody&gt;
+                                        &lt;tr&gt;
+                                            &lt;td style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                                &lt;span&gt;&lt;/span&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;kmTextBlock&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                    &lt;tbody class=&quot;kmTextBlockOuter&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;kmTextBlockInner&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; &quot;&gt;
+                                &lt;table align=&quot;left&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;kmTextContentContainer&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                    &lt;tbody&gt;
+                                        &lt;tr&gt;
+                                            &lt;td class=&quot;kmTextContent&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; color: #505050; font-family: Helvetica; font-size: 14px; line-height: 150%; text-align: left; padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;&quot;&gt;
+            &lt;h2 style=&quot;color: #777; display: block; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: bold; line-height: 110%; letter-spacing: normal; margin: 0; margin-bottom: 9px; text-align: left&quot;&gt;
+                    Excerpt
+                &lt;/h2&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;kmTextBlock&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                    &lt;tbody class=&quot;kmTextBlockOuter&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;kmTextBlockInner&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; &quot;&gt;
+                                &lt;table align=&quot;left&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;kmTextContentContainer&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0&quot;&gt;
+                                    &lt;tbody&gt;
+                                        &lt;tr&gt;
+                                            &lt;td class=&quot;kmTextContent&quot; valign=&quot;top&quot; style=&quot;border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; color: #505050; font-family: Helvetica; font-size: 14px; line-height: 150%; text-align: left; padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;&quot;&gt;
+            
+                    &lt;div style=&quot;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border:solid 1px #dadada;padding:10px;background-color:#efefef;&quot;&gt;
+                &lt;p&gt;seven&lt;/p&gt;
+&lt;/div&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+													
+
+                                                    &lt;!-- Footer --&gt;
+                                                   &lt;div
+                                                    	style=&quot;text-align: center; border-top: 1px dotted gray; margin: 20px; padding-top: 20px&quot;&gt;
+                                                        &lt;img
+                                                        	alt=&quot;contentbox&quot;
+                                                        	class=&quot;kmImage&quot;
+                                                        	src=&quot;contentbox-horizontal.png&quot;
+                                                        	style=&quot;border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; max-width: 100%; padding-bottom: 0; display: inline; vertical-align: bottom&quot; /&gt;
+
+                                                        &lt;br&gt;&lt;br&gt;
+
+                                                        
+                                                        &lt;small style=&quot;color: gray&quot;&gt;
+                                                            You're receiving this email because of your account on
+                                                            &lt;a href=&quot;http://127.0.0.1:52761&quot;&gt;
+                                                                &lt;em&gt;Jonathan Lainez&lt;/em&gt;
+                                                            &lt;/a&gt;
+                                                            &lt;br&gt;
+                                                            If you'd like to receive fewer emails, you can adjust your notification settings.
+                                                        &lt;/small&gt;
+                                                        
+                                                    &lt;/div&gt;
+
+                                                &lt;/td&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/tbody&gt;
+                                    &lt;/table&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</td></tr></table></td></tr><tr><td class="luceeH0">bodyTokens</td><td class="luceeN0"><table><tr><td class="collapse-trigger luceeH0" colspan="3" style="cursor:pointer;"><span>Struct</span></td></tr><tr><td class="luceeH0">ENTRYAUTHOR</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">Jonathan Lainez</td></tr></table></td></tr><tr><td class="luceeH0">ENTRYAUTHOREMAIL</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">jonaqz@gmail.com</td></tr></table></td></tr><tr><td class="luceeH0">ENTRYEXCERPT</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">&lt;p&gt;seven&lt;/p&gt;
+</td></tr></table></td></tr><tr><td class="luceeH0">ENTRYEXPIREDATE</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1"></td></tr></table></td></tr><tr><td class="luceeH0">ENTRYISPUBLISHED</td><td class="luceeN0"><table><tr><td class="luceeH1">boolean</td><td class="luceeN1">true</td></tr></table></td></tr><tr><td class="luceeH0">ENTRYPUBLISHEDDATE</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">Feb 21, 2024 16:55:00 UTC</td></tr></table></td></tr><tr><td class="luceeH0">ENTRYTITLE</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">7th</td></tr></table></td></tr><tr><td class="luceeH0">ENTRYURL</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">http://127.0.0.1:52761/blog/7th</td></tr></table></td></tr></table></td></tr><tr><td class="luceeH0">cc</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1"></td></tr></table></td></tr><tr><td class="luceeH0">debug</td><td class="luceeN0"><table><tr><td class="luceeH1">boolean</td><td class="luceeN1">false</td></tr></table></td></tr><tr><td class="luceeH0">from</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">jonaqz@gmail.com</td></tr></table></td></tr><tr><td class="luceeH0">fromName</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1"></td></tr></table></td></tr><tr><td class="luceeH0">mailParams</td><td class="luceeN0"><table><tr><td class="collapse-trigger luceeH2" colspan="0" style="cursor:pointer;"><span>Array</span></td></tr></table></td></tr><tr><td class="luceeH0">mailParts</td><td class="luceeN0"><table><tr><td class="collapse-trigger luceeH2" colspan="0" style="cursor:pointer;"><span>Array</span></td></tr></table></td></tr><tr><td class="luceeH0">password</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1"></td></tr></table></td></tr><tr><td class="luceeH0">port</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">25</td></tr></table></td></tr><tr><td class="luceeH0">subject</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">Jonathan Lainez - Blog Entry Created - 7th</td></tr></table></td></tr><tr><td class="luceeH0">to</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">jonaqz@gmail.om,jonaqz@gmail.om</td></tr></table></td></tr><tr><td class="luceeH0">type</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">html</td></tr></table></td></tr><tr><td class="luceeH0">username</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1"></td></tr></table></td></tr><tr><td class="luceeH0">useSSL</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">false</td></tr></table></td></tr><tr><td class="luceeH0">useTLS</td><td class="luceeN0"><table><tr><td class="luceeH1">string</td><td class="luceeN1">false</td></tr></table></td></tr></table></div>
+<!-- ==stop== dump -->
+
+				<hr/>
+				Mail Params
+				<hr/>
+			
+<!-- ==start== dump {ts '2024-02-21 16:55:50'} format: html -->
+<div id="xev" class="-lucee-dump"><style>
+.-lucee-dump .disp-none { display: none; }
+</style>
+<script>
+window.__Lucee = { initialized : false,
+				addEventListeners : function(selector, event, handler, useCapture){
+					useCapture = useCapture || false;
+					Array.prototype.forEach.call(
+						 document.querySelectorAll(selector)
+						,function(el, ix) {
+						  el.addEventListener(event, handler, useCapture);
+						}
+					);
+				}
+				,getNextSiblings   : function(el){
+					var  orig = el
+						,result = [];
+					while (el && el.nodeType === Node.ELEMENT_NODE) {
+						if (el !== orig)
+							result.push(el);
+						el = el.nextElementSibling || el.nextSibling;
+					}
+					return result;
+				}
+				,onDocumentReady		   : function(){
+					var L = window.__Lucee;
+					if (L.initialized)
+						return;
+					L.addEventListeners(".collapse-trigger", "click", function(evt){
+						var tr = evt.target.closest("tr");
+						var siblings = L.getNextSiblings(tr);
+						siblings.forEach(function(el, ix){
+							el.classList.toggle("disp-none");
+						});
+					});
+					L.initialized = true;
+				}
+			}
+			
+document.addEventListener("DOMContentLoaded", __Lucee.onDocumentReady);
+</script>
+<style type="text/css">
+div#xev table {font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:11px; empty-cells:show; color:#000; border-collapse:collapse;}
+div#xev td {border:1px solid #000; vertical-align:top; padding:2px; empty-cells:show;}
+div#xev td span {font-weight:bold;}
+div#xev td.luceeN0 {color:#336600;border-color:#336600;background-color:#cf3;}
+div#xev td.luceeH0 {color:#336600;border-color:#336600;background-color:#9c3;}
+</style>
+<table title="/Users/jona/Documents/Dev/jonalainez/modules/contentbox/modules/contentbox-deps/modules/cbmailservices/models/protocols/FileProtocol.cfc:107"><tr><td class="collapse-trigger luceeH0" colspan="0" style="cursor:pointer;"><span>Array</span></td></tr></table></div>
+<!-- ==stop== dump -->
+
+				<hr/>
+				Mail Parts
+				<hr/>
+			
+<!-- ==start== dump {ts '2024-02-21 16:55:50'} format: html -->
+<div id="xex" class="-lucee-dump"><style>
+.-lucee-dump .disp-none { display: none; }
+</style>
+<script>
+window.__Lucee = { initialized : false,
+				addEventListeners : function(selector, event, handler, useCapture){
+					useCapture = useCapture || false;
+					Array.prototype.forEach.call(
+						 document.querySelectorAll(selector)
+						,function(el, ix) {
+						  el.addEventListener(event, handler, useCapture);
+						}
+					);
+				}
+				,getNextSiblings   : function(el){
+					var  orig = el
+						,result = [];
+					while (el && el.nodeType === Node.ELEMENT_NODE) {
+						if (el !== orig)
+							result.push(el);
+						el = el.nextElementSibling || el.nextSibling;
+					}
+					return result;
+				}
+				,onDocumentReady		   : function(){
+					var L = window.__Lucee;
+					if (L.initialized)
+						return;
+					L.addEventListeners(".collapse-trigger", "click", function(evt){
+						var tr = evt.target.closest("tr");
+						var siblings = L.getNextSiblings(tr);
+						siblings.forEach(function(el, ix){
+							el.classList.toggle("disp-none");
+						});
+					});
+					L.initialized = true;
+				}
+			}
+			
+document.addEventListener("DOMContentLoaded", __Lucee.onDocumentReady);
+</script>
+<style type="text/css">
+div#xex table {font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:11px; empty-cells:show; color:#000; border-collapse:collapse;}
+div#xex td {border:1px solid #000; vertical-align:top; padding:2px; empty-cells:show;}
+div#xex td span {font-weight:bold;}
+div#xex td.luceeN0 {color:#336600;border-color:#336600;background-color:#cf3;}
+div#xex td.luceeH0 {color:#336600;border-color:#336600;background-color:#9c3;}
+</style>
+<table title="/Users/jona/Documents/Dev/jonalainez/modules/contentbox/modules/contentbox-deps/modules/cbmailservices/models/protocols/FileProtocol.cfc:113"><tr><td class="collapse-trigger luceeH0" colspan="0" style="cursor:pointer;"><span>Array</span></td></tr></table></div>
+<!-- ==stop== dump -->
+
+				<hr/>
+				Mail Body
+				<hr/>
+			<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<base href="http://127.0.0.1:52761/modules/contentbox/email_templates/images/" />
+
+	<title>ContentBox Email</title>
+    <!--[if gte mso 6]>
+      <style>
+          table.kmButtonBarContent {width:100% !important;}
+      </style>
+    <![endif]-->
+
+	<style type="text/css">
+        @media only screen and (max-width: 480px) {
+            body, table, td, p, a, li, blockquote {
+                -webkit-text-size-adjust: none !important;
+            }
+            body{
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+            td[id=bodyCell] {
+                padding: 10px !important;
+            }
+            table[class=kmTextContentContainer] {
+                width: 100% !important;
+            }
+            table[class=kmBoxedTextContentContainer] {
+                width: 100% !important;
+            }
+            td[class=kmImageContent] {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            img[class=kmImage] {
+                width:100% !important;
+            }
+            table[class=kmSplitContentLeftContentContainer],
+            table[class=kmSplitContentRightContentContainer],
+            table[class=kmColumnContainer] {
+                width:100% !important;
+            }
+            table[class=kmSplitContentLeftContentContainer] td[class=kmTextContent],
+            table[class=kmSplitContentRightContentContainer] td[class=kmTextContent],
+            table[class="kmColumnContainer"] td[class=kmTextContent] {
+                padding-top:9px !important;
+            }
+            td[class="rowContainer kmfloat-left"],
+            td[class="rowContainer kmfloat-left firstColumn"],
+            td[class="rowContainer kmfloat-left lastColumn"] {
+                float:left;
+                clear: both;
+                width: 100% !important;
+            }
+            table[id=templateContainer],
+            table[class=templateRow],
+            table[id=templateHeader],
+            table[id=templateBody],
+            table[id=templateFooter] {
+                max-width:600px !important;
+                width:100% !important;
+            }
+
+            h1 {
+                font-size:24px !important;
+                line-height:100% !important;
+            }
+
+
+            h2 {
+                font-size:20px !important;
+                line-height:100% !important;
+            }
+
+
+            h3 {
+                font-size:18px !important;
+                line-height:100% !important;
+            }
+
+
+            h4 {
+                font-size:16px !important;
+                line-height:100% !important;
+            }
+
+            td[class=rowContainer] td[class=kmTextContent] {
+                font-size:18px !important;
+                line-height:100% !important;
+                padding-right:18px !important;
+                padding-left:18px !important;
+            }
+
+
+            td[class=headerContainer] td[class=kmTextContent] {
+                font-size:18px !important;
+                line-height:100% !important;
+                padding-right:18px !important;
+                padding-left:18px !important;
+            }
+
+
+            td[class=bodyContainer] td[class=kmTextContent] {
+                font-size:18px !important;
+                line-height:100% !important;
+                padding-right:18px !important;
+                padding-left:18px !important;
+            }
+
+
+            td[class=footerContent] {
+                font-size:18px !important;
+                line-height:100% !important;
+            }
+
+            td[class=footerContent] a {
+                display:block !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #EAEAEA">
+<center>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" id="bodyTable" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; background-color: #EAEAEA; height: 100%; margin: 0; width: 100%">
+        <tbody>
+            <tr>
+                <td align="center" id="bodyCell" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; padding-top: 20px; padding-left: 20px; padding-bottom: 20px; padding-right: 20px; border-top: 0; height: 100%; margin: 0; width: 100%">
+                    <table border="0" cellpadding="0" cellspacing="0" id="templateContainer" width="600" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; border: 1px solid #CCC; background-color: #F4F4F4; border-radius: 0">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="templateRow" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="rowContainer kmfloat-left" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="templateRow" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                        <tbody>
+                                            <tr>
+                                                <td
+                                                	class="rowContainer kmfloat-left"
+                                                	valign="top"
+                                                	style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0;padding-top:10px;">
+
+                                                    
+													<table border="0" cellpadding="0" cellspacing="0" class="kmTextBlock" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                    <tbody class="kmTextBlockOuter">
+                        <tr>
+                            <td class="kmTextBlockInner" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; ">
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTextContentContainer" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="kmTextContent" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; color: #505050; font-family: Helvetica; font-size: 14px; line-height: 150%; text-align: left; padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;">
+            
+                <table cellpadding=3 cellspacing=3>
+                    <tr>
+                        <td width=30><img
+						class="gravatar"
+						align="middle"
+						width="40"
+						height="40"
+						src="//www.gravatar.com/avatar.php?gravatar_id=3bbfb35b8e76b0dd885490facc423e80&s=40&r=PG"
+					/></td>
+                        <td>
+        <strong>Jonathan Lainez</strong> created a new blog entry:<br /><a href='http://127.0.0.1:52761/blog/7th'>7th</a>
+    </td>
+                    </tr>
+                </table>
+            
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="kmDividerBlock" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                    <tbody class="kmDividerBlockOuter">
+                        <tr>
+                            <td class="kmDividerBlockInner" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; padding-top:18px;padding-bottom:18px;padding-left:18px;padding-right:18px;">
+                                <table class="kmDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; border-top-width:1px;border-top-style:solid;border-top-color:#DDDDDD;">
+                                    <tbody>
+                                        <tr>
+                                            <td style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                                <span></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    <table border="0" cellpadding="0" cellspacing="0" class="kmTextBlock" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                    <tbody class="kmTextBlockOuter">
+                        <tr>
+                            <td class="kmTextBlockInner" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; ">
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTextContentContainer" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="kmTextContent" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; color: #505050; font-family: Helvetica; font-size: 14px; line-height: 150%; text-align: left; padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;">
+            <h2 style="color: #777; display: block; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: bold; line-height: 110%; letter-spacing: normal; margin: 0; margin-bottom: 9px; text-align: left">
+                    Entry Details
+                </h2>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    <table border="0" cellpadding="0" cellspacing="0" class="kmTextBlock" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                    <tbody class="kmTextBlockOuter">
+                        <tr>
+                            <td class="kmTextBlockInner" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; ">
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTextContentContainer" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="kmTextContent" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; color: #505050; font-family: Helvetica; font-size: 14px; line-height: 150%; text-align: left; padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;">
+            
+        <table cellpadding='3' cellspacing='3'>
+            <tbody>
+                <tr>
+                    <td><strong>Title:</strong></td>
+                    <td>7th</td>
+                </tr>
+                <tr>
+                    <td><strong>URL:</strong></td>
+                    <td><a href='http://127.0.0.1:52761/blog/7th'>http://127.0.0.1:52761/blog/7th</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Published:</strong></td>
+                    <td>true on Feb 21, 2024 16:55:00 UTC</td>
+                </tr>
+                <tr>
+                    <td><strong>Expires:</strong></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="kmDividerBlock" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                    <tbody class="kmDividerBlockOuter">
+                        <tr>
+                            <td class="kmDividerBlockInner" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; padding-top:18px;padding-bottom:18px;padding-left:18px;padding-right:18px;">
+                                <table class="kmDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; border-top-width:1px;border-top-style:solid;border-top-color:#DDDDDD;">
+                                    <tbody>
+                                        <tr>
+                                            <td style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                                <span></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    <table border="0" cellpadding="0" cellspacing="0" class="kmTextBlock" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                    <tbody class="kmTextBlockOuter">
+                        <tr>
+                            <td class="kmTextBlockInner" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; ">
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTextContentContainer" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="kmTextContent" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; color: #505050; font-family: Helvetica; font-size: 14px; line-height: 150%; text-align: left; padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;">
+            <h2 style="color: #777; display: block; font-family: Helvetica; font-size: 20px; font-style: normal; font-weight: bold; line-height: 110%; letter-spacing: normal; margin: 0; margin-bottom: 9px; text-align: left">
+                    Excerpt
+                </h2>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    <table border="0" cellpadding="0" cellspacing="0" class="kmTextBlock" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                    <tbody class="kmTextBlockOuter">
+                        <tr>
+                            <td class="kmTextBlockInner" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; ">
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="kmTextContentContainer" width="100%" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="kmTextContent" valign="top" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; color: #505050; font-family: Helvetica; font-size: 14px; line-height: 150%; text-align: left; padding-top:9px;padding-bottom:9px;padding-left:18px;padding-right:18px;">
+            
+                    <div style="border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border:solid 1px #dadada;padding:10px;background-color:#efefef;">
+                <p>seven</p>
+</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+													
+
+                                                    <!-- Footer -->
+                                                   <div
+                                                    	style="text-align: center; border-top: 1px dotted gray; margin: 20px; padding-top: 20px">
+                                                        <img
+                                                        	alt="contentbox"
+                                                        	class="kmImage"
+                                                        	src="contentbox-horizontal.png"
+                                                        	style="border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; max-width: 100%; padding-bottom: 0; display: inline; vertical-align: bottom" />
+
+                                                        <br><br>
+
+                                                        
+                                                        <small style="color: gray">
+                                                            You're receiving this email because of your account on
+                                                            <a href="http://127.0.0.1:52761">
+                                                                <em>Jonathan Lainez</em>
+                                                            </a>
+                                                            <br>
+                                                            If you'd like to receive fewer emails, you can adjust your notification settings.
+                                                        </small>
+                                                        
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+</body>
+</html>
